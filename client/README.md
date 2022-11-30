@@ -1,19 +1,3 @@
-<style>
-.array {
-    color: #CE915B;
-}
-.array:hover {
-    color: #CE915B;
-}
-p {
-    text-indent: 25px;
-}
-code {
-  font-family: Consolas,"courier new";
-  font-size: 110%;
-}
-</style>
-
 <h1 align="center">Руководство по <a href="https://vitejs.dev/guide/"><img src="https://camo.githubusercontent.com/61e102d7c605ff91efedb9d7e47c1c4a07cef59d3e1da202fd74f4772122ca4e/68747470733a2f2f766974656a732e6465762f6c6f676f2e737667" height="32px"/> Vite</a>  + <a href="https://ru.reactjs.org/docs/getting-started.html" target="_blank">React <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" height="32px"/></a></h1>
 <p align="center">В этом репозитории используется инструмент Vite, а также JS-библиотека React.</p>
 <br>
