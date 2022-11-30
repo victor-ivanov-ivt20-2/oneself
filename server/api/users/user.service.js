@@ -7,9 +7,9 @@ module.exports = {
         pool.query(
             `insert into registrations(firstname, secondname, lastname, password) values(?,?,?,?)`,
             [
-                data.first_name,
-                data.second_name,
-                data.last_name,
+                data.firstname,
+                data.secondname,
+                data.lastname,
                 data.password
             ],
             (error, results, fields) => {

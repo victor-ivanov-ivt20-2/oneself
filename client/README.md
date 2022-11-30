@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+<style>
+.array {
+    color: #CE915B;
+}
+.array:hover {
+    color: #CE915B;
+}
+p {
+    text-indent: 25px;
+}
+code {
+  font-family: Consolas,"courier new";
+  font-size: 110%;
+}
+</style>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">Руководство по <a href="https://vitejs.dev/guide/"><img src="https://camo.githubusercontent.com/61e102d7c605ff91efedb9d7e47c1c4a07cef59d3e1da202fd74f4772122ca4e/68747470733a2f2f766974656a732e6465762f6c6f676f2e737667" height="32px"/> Vite</a>  + <a href="https://ru.reactjs.org/docs/getting-started.html" target="_blank">React <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" height="32px"/></a></h1>
+<p align="center">В этом репозитории используется инструмент Vite, а также JS-библиотека React.</p>
+<br>
+<p>
+Vite.js - это один из инструментов для настройки сред разработки. Он не является отдельным фреймворком, а скорее удобным инструментом для автоматизации рабочих процессов внутри проекта, а также взаимодействия с серверной частью. <a href="https://liquidhub.ru/blogs/blog/vite-js">Подробнее вы можете почитать о vite на этом сайте</a>.<br> 
+</p>
 
-## Available Scripts
+<p> 
+Если вы хотите узнать больше про React, то рекомендую вам [<a class="array" href="https://youtu.be/GNrdg3PzpJQ"> "React JS фундаментальный ютуб курс от А до Я" </a>, <a class="array" href="https://youtube.com/playlist?list=PLiZoB8JBsdznY1XwBcBhHL9L7S_shPGVE"> React-router v6 </a>, ... <span style="font-size: 10px"> сам пока React плохо знаю, поэтому больше порекомендовать не могу :)</span>]
+</p>
 
-In the project directory, you can run:
+<br>
+<h2 align="center"> Наш репозиторий </h2>
+<br>
 
-### `npm start`
+<p>Чтобы запустить проект нужно написать в консоль <pre><code>npm run dev</code></pre></p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p>
+Попытаюсь кратко объяснить что за что отвечает (я про файлы), если я где-то написал неправильно, буду благодарен за фитбек!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Первое что вы можете заметить здесь, так это <span style="color: #E2C08D" >package.json</span> и <span style="color: #E2C08D" >package-lock.json</span>. Они нужны для того, чтобы сохранить имена и версии библиотек, которые используются в этом проекте. Если я или кто-нибудь другой захочет склонировать этот репозиторий, то он склонирует его без папки <span style="color: #E2C08D" >node_modules</span> потому, что эта папка весит много и файлов хранит в себе очень много, передача такой папки может занять большое время. Чтобы папка <span style="color: #E2C08D" >node_modules</span> после клонирования появилась нужно прописать: <br><pre><code>npm install</code></pre>
 
-### `npm test`
+<span style="color: #E2C08D" >vite.config.js</span> - файл конфигурации для vite. <span style="color: #E2C08D" >index.html</span> - наш главный HTML файл, куда и монтируется React.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Далее нас встретят две папки <span style="color: #E2C08D" >src</span> и 
+<span style="color: #E2C08D" >public</span>.
+Основная папка, где и будет происходит работа - это <span style="color: #E2C08D" >src</span>. Папка <span style="color: #E2C08D" >public</span> служит для статичных файлов, которые никогда не упоминаются в исходном коде (например robots.txt), либо для того, чтобы легко получить его URL-адрес. 
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+В самой папке <span style="color: #E2C08D" >src</span> находится React, где  <span style="color: #E2C08D" >main.jsx</span> - это инициализатор самого React, а файл  <span style="color: #E2C08D" >App.jsx</span> - это главная страница и первый наш react компонент. В папке  <span style="color: #E2C08D" >pages</span> находятся остальные React компоненты, а в папке  <span style="color: #E2C08D" >assets</span> будут разные изображения и прочие подобные статичные файлы.  
+</p> 

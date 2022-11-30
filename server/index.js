@@ -8,6 +8,7 @@ const app = express()
 const userRouter = require('./api/users/user.router')
 
 app.use(express.json())
+app.use(cors())
 app.use('/api/users', userRouter)
 
 const start = async () => {
